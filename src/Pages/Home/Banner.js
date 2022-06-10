@@ -1,4 +1,6 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import profile from '../../Assets/profile.png';
 
 const Banner = () => {
@@ -11,7 +13,7 @@ const Banner = () => {
                     <h1 className="text-5xl font-bold">I'm <span className='text-primary'>A</span>rif,</h1>
                     <h1 className="text-5xl font-bold">web developer</h1>
                     <p className="py-6 text-lg font-bold text-secondary">Junior Web Developer || React Developer</p>
-                    <button className="btn btn-outline btn-primary font-bold">Contact</button>
+                    <Nav.Link href='home#contact' className="btn btn-outline btn-primary font-bold">Contact</Nav.Link>
                 </div>
             </div>
         </div>
