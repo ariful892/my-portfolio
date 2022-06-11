@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "Motocar Junction",
+        "img1": "https://i.ibb.co/WvZG0T2/project11.png",
+        "img2": "https://i.ibb.co/52nstrc/project12.png",
+        "img3": "https://i.ibb.co/FVDvRmj/project13.png",
+        "img4": "https://i.ibb.co/yk5HKPP/project14.png",
+        "objective": "An web application for a car parts manufacturer company.",
+        "description": "Unregistered user can check out the available car parts. User can register through their email or google account. But to purchase any parts, at first users have to register. Registered user can purchase item, can give review and also can also remove their items that are added for purchase. Admin can add or remove items, manage items, manage users and also manage all the purchased items.",
+        "technology": "HTML, CSS, Tailwind CSS, DaisyUI, React.js, React Router, Node.js, Express.js, MongoDB, Firebase, React Toastify",
+        "liveSite": "https://motocar-junction.web.app/",
+        "clientCode": "https://github.com/ariful892/motocar-junction-client",
+        "serverCode": "https://github.com/ariful892/motocar-junction-server"
+    },
+    {
+        "id": 2,
+        "name": "MotoZone",
+        "img1": "https://i.ibb.co/njD4Yvr/project21.png",
+        "img2": "https://i.ibb.co/bzf6CDG/project22.png",
+        "img3": "https://i.ibb.co/6YGkmzV/project23.png",
+        "img4": "https://i.ibb.co/gdKNLWS/project24.png",
+        "objective": "A web application for a motorcycle warehouse.",
+        "description": "Unregistered user can check out the featured inventories. Users can register through their Email, Google or GitHub account. Registered users can manage their items. They can add or remove any item. Users can remove their delivered item from my items. Also they can restock the item quantity if it is out of stock.",
+        "technology": "HTML, CSS, Bootstrap, React.js, React Router, Node.js, Express.js, MongoDB, Firebase, React Toastify",
+        "liveSite": "https://assignment11-motozone.web.app",
+        "clientCode": "https://github.com/ariful892/motozone-client",
+        "serverCode": "https://github.com/ariful892/motozone-server"
+    },
+    {
+        "id": 3,
+        "name": "Nichols Wagner",
+        "img1": "https://i.ibb.co/g3wMHSt/project31.png",
+        "img2": "https://i.ibb.co/JxYDFG7/project32.png",
+        "img3": "https://i.ibb.co/RBNgPgJ/project33.png",
+        "img4": "https://i.ibb.co/j4Nbbs7/project34.png",
+        "objective": "A web application for a programming instructor.",
+        "description": "Unregistered users can checkout the available programming courses. Users can register through their email, Google or GitHub account. Users have to register in the website to book any course or to get access of the advanced courses. Users can order the booked course through checkout item.",
+        "technology": "HTML, CSS, Bootstrap, React.js, React Router, Node.js, Express.js, MongoDB, Firebase, React Toastify",
+        "liveSite": "https://programming-fundamental-b1ee0.web.app/",
+        "clientCode": "https://github.com/ariful892/programming-fundamental"
+    }
+]
