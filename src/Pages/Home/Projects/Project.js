@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Project = ({ project }) => {
 
     const navigate = useNavigate();
-    const { id, name, img1, img2, img3, img4, objective, description, liveSite } = project;
+    const { _id, name, img1, img2, img3, img4, objective, description, liveSite } = project;
 
 
     return (
@@ -14,7 +14,7 @@ const Project = ({ project }) => {
                 <p className='font-bold text-center'>{objective}</p>
                 <div className="card-actions justify-center">
                     <a href={liveSite} className="btn btn-sm btn-secondary">Visit Site</a>
-                    <Link to={`/details/${id}`} className="btn btn-sm btn-outline btn-secondary">Details</Link>
+                    <Link to={`/details/${_id}`} className="btn btn-sm btn-outline btn-secondary">Details</Link>
                 </div>
             </div>
         </div>

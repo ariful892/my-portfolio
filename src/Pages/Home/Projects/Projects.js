@@ -1,13 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import project1 from '../../../Assets/projects/project1.png';
-import project2 from '../../../Assets/projects/project2.png';
-import project3 from '../../../Assets/projects/project3.png';
-import useProjects from '../../hooks/useProjects';
+import Loading from '../../Shared/Loading';
 import Project from './Project';
 
 const Projects = () => {
 
-    const [projects, setProjects] = useProjects();
+    const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/project')
+            .then(res => res.json())
+            .then(data => {
+                setProjects(data);
+                setIsLoading(false);
+            })
+    }, []);
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
 
 
     return (
@@ -15,7 +26,7 @@ const Projects = () => {
             <h1 className='text-center text-3xl text-secondary uppercase mb-5'>My Work</h1>
             <div className='grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    projects.map(project => <Project key={project.id} project={project}></Project>)
+                    projects.map(project => <Project key={project._id} project={project}></Project>)
                 }
             </div>
         </section>
