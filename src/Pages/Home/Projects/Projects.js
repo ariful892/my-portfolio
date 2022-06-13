@@ -8,7 +8,7 @@ const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/project')
+        fetch('https://vast-coast-24222.herokuapp.com/project')
             .then(res => res.json())
             .then(data => {
                 setProjects(data);
