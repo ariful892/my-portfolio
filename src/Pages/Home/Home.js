@@ -6,11 +6,13 @@ import Projects from './Projects/Projects';
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <About></About>
             <Projects></Projects>
             <Contact></Contact>
+
+
         </div>
     );
 };

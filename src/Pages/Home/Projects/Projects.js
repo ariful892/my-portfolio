@@ -8,7 +8,7 @@ const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://vast-coast-24222.herokuapp.com/project')
+        fetch(' https://my-portfolio-server-production.up.railway.app/project')
             .then(res => res.json())
             .then(data => {
                 setProjects(data);
@@ -23,7 +23,7 @@ const Projects = () => {
 
     return (
         <section id='projects' className='my-24 lg:mx-12'>
-            <h1 className='text-center text-3xl text-secondary uppercase mb-5'>My Work</h1>
+            <h1 className='text-center text-3xl text-primary uppercase mb-5'>Recent Works</h1>
             <div className='grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
                     projects.map(project => <Project key={project._id} project={project}></Project>)

@@ -3,7 +3,6 @@ import useProjects from '../../hooks/useProjects';
 import { useParams } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
 
-const port = process.env.PORT || 3000;
 
 const ProjectDetails = () => {
 
@@ -12,7 +11,7 @@ const ProjectDetails = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`https://vast-coast-24222.herokuapp.com/project/${id}`)
+        fetch(` https://my-portfolio-server-production.up.railway.app/project/${id}`)
             .then(res => res.json())
             .then(data => {
                 setProject(data)

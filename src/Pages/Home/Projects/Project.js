@@ -13,8 +13,8 @@ const Project = ({ project }) => {
             <div className="card-body">
                 <p className='font-bold text-center'>{objective}</p>
                 <div className="card-actions justify-center">
-                    <a href={liveSite} className="btn btn-sm btn-secondary">Visit Site</a>
-                    <Link to={`/details/${_id}`} className="btn btn-sm btn-outline btn-secondary">Details</Link>
+                    <a href={liveSite} className="btn btn-sm btn-primary">Visit Site</a>
+                    <Link to={`/details/${_id}`} className="btn btn-sm btn-outline btn-primary">Details</Link>
                 </div>
             </div>
         </div>
