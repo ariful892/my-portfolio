@@ -8,7 +8,7 @@ const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch(' https://my-portfolio-server-production.up.railway.app/project')
+        fetch('https://my-portfolio-6ndc.onrender.com/project')
             .then(res => res.json())
             .then(data => {
                 setProjects(data);
